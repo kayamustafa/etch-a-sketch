@@ -1,1 +1,2 @@
-# etch-a-sketch
+# Etch-a-sketch
+A pixel art making app.

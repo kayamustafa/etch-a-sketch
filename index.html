@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <h1>Etch a Sketch</h1>
+        <div class="content">
+            <div class="buttons">
+                <input type="color" name="color-pick" id="color-pick" onchange="setColor(value)">
+                <button onclick="setColor('white')" class="eraserButton">Eraser</button>
+                <button onclick="setColor('random')" class="randomButton">Random</button>
+                <button onclick="resetBoard()" class="resetButton">Reset</button>
+                <input type="range" name="boardsize" value="16" id="boardsize" min="1" max="64"
+                    onchange="changeSize(this.value)" oninput="setInputValue()">
+                <span id="range-value">16x16</span>
+            </div>
+            <div class="board"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
